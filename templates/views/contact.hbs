@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact US</title>
+    <link rel="shortcut icon" href="images/phoneFAV.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body class="containerBg">
+    {{>navbar}}
+
+    {{!-- <div class="h-100 d-flex flex-column justify-content-center mx-auto px-6 py-8 gap-8" style="max-width:900px">
+        <div class=" d-flex flex-column flex-lg-row container-bg-1 rounded-5 mt-6 align-items-center">
+            <div class="container-bg-3 px-9 d-none d-lg-block rounded-start-5" style="min-width: 18rem;"><img
+                    class="mt-n6 w-auto" src="/images/individual.png" alt="individual" style="height: 20rem;">
+            </div>
+            <div class="container-bg-3 px-9 d-block d-lg-none rounded-top-5 w-100 text-center">
+                <img class="mt-n6 w-auto" src="/images/individual.png" alt="individual" style="max-height:18rem;">
+            </div>
+
+            <div class="p-6 text-center text-lg-start">
+                <div class="title-sm fg-default-3 pb-2">Empowering</div>
+                <h3 class="fg-success-2">Individuals</h3>
+                <div class="fg-default-2">by providing safe disposal ways to ensure healthy environment &amp;
+                    sustainable living.</div>
+                <div class="pb-3 pt-6"><a href="individual" class="label-md">&nbsp;Learn more <i
+                            class="icon-arrow-right"></i></a></div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row container-bg-1 rounded-5 mt-6 align-items-center ">
+            <div class="p-6 text-center text-lg-end order-2 order-lg-1">
+                <div class="title-sm fg-default-3 pb-2">Enabling</div>
+                <h3 class="fg-success-2">Businesses</h3>
+                <div class="fg-default-2">to offset their carbon footprint for eco-friendly organizational practices.
+                </div>
+                <div class="pb-3 pt-6">
+                    <a href="/business" class="label-md">&nbsp;Learn more
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-bg-3 px-9 rounded-end-5 d-none d-lg-block order-1 order-lg-2"
+                style="min-width: 18rem;"><img class="mt-n6 w-auto" src="/images/business-man.png" alt="business"
+                    style="height: 20rem;"></div>
+            <div class="container-bg-3 px-9 rounded-top-5 d-block d-lg-none order-1 
+                order-lg-2 w-100 text-center">
+                <img class="mt-n6 w-auto" src="/images/business-man.png" alt="business" style="max-height: 18rem;">
+            </div>
+        </div>
+    </div> --}}
+    <div>
+        <div class="container">
+            <div class="h-100 row">
+                <div class="col-2">
+                    {{!-- Extra space --}}
+                </div>
+                <div class="col-8">
+                    <div class="d-flex flex-row  m-3 individualBusinessBoxCol roundedCard">
+                        <div class=" me-2">
+                            <img class="imageBg roundedCard" src="/images/individual.jpg"  width="400px" height="400px" alt="" srcset="">
+                        </div>
+                        <div class="mx-2 d-flex flex-column justify-content-center p-3 ">
+                            <div class="title-sm fg-default-3 pb-2">Empowering</div>
+                            <h3 class="fg-success-2">Individuals</h3>
+                            <div class="fg-default-2">
+                                to offset their carbon footprint for eco-friendly organizational practices.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row  m-3 individualBusinessBoxCol roundedCard">
+                        <div class="mx-2 d-flex flex-column justify-content-center p-3 ">
+                            <div class="title-sm fg-default-3 pb-2">Enabling</div>
+                            <h3 class="fg-success-2">Businesses</h3>
+                            <div class="fg-default-2">
+                                to offset their carbon footprint for eco-friendly organizational practices.
+                            </div>
+                        </div>
+                        <div class="ms-2">
+                            <img class="imageBg roundedCard" src="/images/business.jpg" alt="" width="400px" height="400px" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    {{!-- Extra space --}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+
+    {{!-- Contact form --}}
+    <div class="containerBg">
+        <div class="container container-fluid">
+            <div class="d-flex flex-row">
+                <h2 class="mx-auto p-3 fs-1">Get in Touch With US</h2>
+            </div>
+            <div class="container roundedCard">
+                <div class="row">
+                    <div class="col-1">
+                        {{!-- Extra Space --}}
+                    </div>
+                    <div class="col-4 mt-5">
+                        <div class="shadow p-3 mb-5 bg-body card" style="height: 492.25px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center pt-3 pb-2">Contact Information</h5>
+                                <p class="text-center pb-3">Fill up the form and our Team will get back to you within 24
+                                    hours
+                                </p>
+                                <div class="d-flex flex-row justify-content-center contactInformation">
+                                    <img class="mx-1 iconSize" src="/images/phone.svg" alt="" srcset="">
+                                    <p class="mx-3">+91-9100001122</p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center contactInformation">
+                                    <img class="mx-1 iconSize" src="/images/mail.svg" alt="" srcset="">
+                                    <p class="mx-3">recycle@kabadihub.com</p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center contactInformation">
+                                    <img class="mx-1 iconSize " src="/images/navigation.svg" alt="" srcset="">
+                                    <p class="text-center text-wrap mx-1" style="width: 280px;">24, Nai Basti 
+                                        Ashok Nagar Kalyanpur,
+                                        Kanpur, Uttar pradesh
+                                        - 208017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        {{!-- Extra Space --}}
+                    </div>
+                    <div class="shadow p-3 my-5 bg-body rounded col-5 roundedCard">
+                        <form action="./contact" method="post">
+                            <div class="mb-1">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" name="fullName">
+                            </div>
+                            <div class="row">
+                                <div class="col mb-1">
+                                    <labe class="form-label">Email address</label>
+                                        <input type="email" class="form-control" name="email">
+                                </div>
+                                <div class="col mb-1">
+                                    <lab class="form-label">Phone</label>
+                                        <input type="number" class="form-control" name="mobile">
+                                </div>
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" name="subject">
+                            </div>
+                            <div class="mb-1">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" name="description" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-1">
+                        {{!-- Extra space --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{>footer}}
+
+    {{!-- <footer class="bd-footer py-2 mt-5 contentBoxFooter">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col m-2 p-2 pureWhiteFooter rounded shadow">
+                    <div class="row">
+                        <div class="col-8 fs-3">
+                            The Recycler
+                        </div>
+                        <div class="col-4 mt-2">
+                            <img class="" src="images/instagram.svg" alt="">
+                            <img class="" src="images/facebook.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-center">© 2002 - 2022 All rights reserved by The Recycler</p>
+
+                        <p class="text-center"> Made with love in India, for the Better &amp; Green Future</p>
+                    </div>
+                </div>
+                <div class="col m-2 p-2 pureWhiteFooter rounded shadow">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="/templates/views/pickup.hbs">For Pickup</a></li>
+                        <li class="mb-2"><a href="/templates/views/contact.hbs">Contact Us</a></li>
+                        <li class="mb-2"><a href="/templates/views/about.hbs">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col m-2 p-2 pureWhiteFooter rounded shadow">
+                    <h5>Appreciated &amp; Featured by</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Forbes</a></li>
+                        <li class="mb-2">TEDx</a></li>
+                        <li class="mb-2">Yahoo</a></li>
+                        <li class="mb-2">World Economic Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col m-2 p-2 pureWhiteFooter rounded shadow">
+                    <h5>Trusted Partners</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Paytm</a></li>
+                        <li class="mb-2">Dominos</a></li>
+                        <li class="mb-2">Reliance</a></li>
+                        <li class="mb-2">ICICI Bank</a></li>
+                        <li class="mb-2">Godrej</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> --}}
+
+    {{!--
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2"
+                            viewBox="0 0 118 94" role="img">
+                            <title>Bootstrap</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span class="fs-5">Bootstrap</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">Designed and built with all the love in the world by the <a
+                                href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a
+                                href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                        <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE"
+                                target="_blank" rel="license noopener">MIT</a>, docs <a
+                                href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
+                                rel="license noopener">CC BY 3.0</a>.</li>
+                        <li class="mb-2">Currently v5.0.2.</li>
+                        <li class="mb-2">Analytics by <a href="https://usefathom.com/ref/ADZSBE" target="_blank"
+                                rel="noopener">Fathom</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="/templates/views/pickup.hbs">For Pickup</a></li>
+                        <li class="mb-2"><a href="/templates/views/contact.hbs">Contact Us</a></li>
+                        <li class="mb-2"><a href="/templates/views/about.hbs">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Appreciated &amp; Featured by</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Forbes</a></li>
+                        <li class="mb-2">TEDx</a></li>
+                        <li class="mb-2">Yahoo</a></li>
+                        <li class="mb-2">World Economic Forum</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Projects</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Trusted Partners</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Paytm</a></li>
+                        <li class="mb-2">Dominos</a></li>
+                        <li class="mb-2">Reliance</a></li>
+                        <li class="mb-2">ICICI Bank</a></li>
+                        <li class="mb-2">Godrej</a></li>
+                        <li class="mb-2">Decathlon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> --}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

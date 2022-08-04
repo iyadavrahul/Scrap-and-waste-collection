@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.containerBg{
+    background-color: rgb(233, 234, 248);
+}
+
+.contentBox{
+    background-color:rgba(235, 235, 235);
+}
+
+
+/* for footer */
+
+/* .contentBoxFooter{
+    background-color:rgb(235, 235, 235);
+}
+
+.pureWhiteFooter{
+    background-color: white;
+} */

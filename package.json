@@ -1,0 +1,24 @@
+{
+  "name": "garbagecollection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "init": "^0.1.2",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@types/hbs": "^4.0.1"
+  }
+}

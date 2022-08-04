@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.individualBusinessBoxCol{
+    background-color: rgb(237, 237, 237);
+}
+.contactInformation{
+    width: 370px;
+    height: 95px;
+}
+.roundedCard{
+    border: 0px solid rgb(220, 220, 220);
+    border-radius: 15px;
+}
+.iconSize{
+    width: 25px;
+    height: 25px;
+}
+.imageBg{
+    background-color: rgb(228, 228, 228);
+}
+/* .formStyle{
+    display: flex;
+    flex-direction: row;
+
+}
+.formStyle form {
+    width: 700px;
+    height: 450px;
+} */
+.containerBg{
+    background-color: rgb(236, 251, 255);
+}
+
+/* for footer */
+
+/* .contentBoxFooter{
+    background-color:rgb(235, 235, 235);
+}
+
+.pureWhiteFooter{
+    background-color: white;
+} */
+

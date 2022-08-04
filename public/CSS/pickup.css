@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.containerBg{
+    background-color: rgb(236, 251, 255);
+}
+.contentBox{
+    background-color:rgb(235, 235, 235);
+}
+.formBg{
+    background-color:rgb(248, 248, 248);
+}
+
+
+/* for footer */
+
+/* .contentBoxFooter{
+    background-color:rgb(235, 235, 235);
+}
+
+.pureWhiteFooter{
+    background-color: white;
+} */

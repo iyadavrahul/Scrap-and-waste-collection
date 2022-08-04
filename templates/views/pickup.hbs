@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Pickup</title>
+    <link rel="shortcut icon" href="images/pickupFav.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/pickup.css">
+</head>
+
+<body class="containerBg">
+    {{>navbar}}
+    <div class="container mt-5 mb-5 contentBox h-50 rounded shadow">
+        <div class="row">
+            <div class="col-4 p-0">
+                <img class="rounded-3" src="images/earth.jpg" alt="" width="400px" height="400px">
+            </div>
+            <div class="col-1">
+                {{!-- Extra Space --}}
+            </div>
+            <div class="col-7 d-flex flex-column justify-content-center">
+                <div class="fs-3 fw-light">Our Eco-System Towards</div>
+                <div class="fs-2 fw-bold">Sustainability Circular Economy</div>
+                <div class="fs-6">The Kabadihub with its acute understanding of waste has developed sustainable
+                    strategies
+                    techniques to manage waste efficiently cost-efficaciously contributing in closing the loop of
+                    product life cycle attain circular economy while infusing sustainability into lives.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Form to pickup --}}
+    <div class="container contentBox mt-5 mb-5">
+        <div class="m-4 p-2 fs-1 fw-bold text-center">Contact for Pickup</div>
+        <div class="row">
+            <div class="col-4 p-0">
+                <img class="rounded-3" src="images/deliveryBoy4.png" alt="">
+            </div>
+            <div class="col-1">
+                {{!-- Extra space --}}
+            </div>
+            <div class="col-6 p-3 m-2 formBg rounded-3">
+                <form action="./pickup" method="post">
+                    <div class="mb-1">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="fullName">
+                    </div>
+                    <div class="row">
+                        <div class="col mb-1">
+                            <lab class="form-label">Mobile Number</label>
+                                <input type="number" class="form-control" name="mobile">
+                        </div>
+                        <div class="col mb-1">
+                            <lab class="form-label">Alternate Mobile Number</label>
+                                <input type="number" class="form-control" name="altmobile">
+                        </div>
+                    </div>
+                    <div class="mb-1">Address</div>
+                    <div class="row">
+                        <div class="col mb-1">
+                            <label class="form-label">Flat/House No.</label>
+                            <input type="text" class="form-control" name="houseNum">
+                            <label class="form-label">Landmark</label>
+                            <input type="text" class="form-control" name="landmark">
+                        </div>
+                        <div class="col mb-1">
+                            <label class="form-label">Directions To Reach</label>
+                            <input type="text" class="form-control" name="directions">
+                            {{!-- <p>Click the button to get your coordinates.</p>
+                            <button onclick="getLocation()">Try It</button>
+                            <p id="demo"></p> --}}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
+            <div class="col-1">
+                {{!-- Extra Space --}}
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+
+
+
+    {{!-- <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo"></p> --}}
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User denied the request for Geolocation."
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
